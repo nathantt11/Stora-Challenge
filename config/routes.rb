@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  root 'units#home'
+  root 'units#index'
   
   get '/admin/units/new', to: 'units#new'
   resources :units

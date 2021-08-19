@@ -1,7 +1,7 @@
 <h1>Add a new Unit!</h1>
 
 <% if @unit.errors.any? %>
-    <h2>The following errors prevented the new unit being published</h2>
+    <h2>The following errors prevented the new unit being added</h2>
     <ul> 
         <% @unit.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>

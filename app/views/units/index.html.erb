@@ -1,0 +1,19 @@
+<h1>Available Units</h1>
+
+<table>
+
+    <tr>
+        <th>Name</th>
+        <th>Size (sq. ft)</th>
+        <th>Price (/ week)</th>
+    </tr>
+
+    <% @units.each do |unit| %>
+        <tr>
+            <td><%= unit.location %></td>
+            <td><%= unit.size %></td>
+            <td>£<%= unit.price %></td>
+            <td><%= link_to "Book Now", new_booking_path(booking)%></td>
+        </tr>
+    <% end %>
+</table>
