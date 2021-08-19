@@ -1,0 +1,30 @@
+<h1>Add a new Unit!</h1>
+
+<% if @unit.errors.any? %>
+    <h2>The following errors prevented the new unit being published</h2>
+    <ul> 
+        <% @unit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+    </ul>
+<% end %>
+
+<%= form_for @unit do |f| %>
+    <p> 
+        <%= f.label :name %> <br>
+        <%= f.text_field :location %>
+    </p>
+    <p> 
+        <%= f.label :size %> <br>
+        <%= f.text_field :size %>
+    </p>
+    <p> 
+        <%= f.label :price %> <br>
+        <%= f.text_field :price %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+
+<% end %>
