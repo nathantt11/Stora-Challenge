@@ -1,24 +1,14 @@
-# README
+# Stora Junior Developer Coding Challenge 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+How to get the project running;
+Once the repo is cloned and you have navigated to the directory, use cmd 'rails server' to start the server listening on port 3000. Open http://localhost:3000 on a browser and the project will be running.
 
-Things you may want to cover:
+Plan to approach problem;
+Initally got familiar with Rails and began thinking about the table design for Units and Bookings. My plan was to focus on functionality and leave design for any extra time I had (which ended up being 0).
 
-* Ruby version
+If I had more time;
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Thorough testing 
+* Comments added
+* More validation 
+* Actual styling - make it less painful to look at
