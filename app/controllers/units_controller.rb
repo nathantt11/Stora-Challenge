@@ -8,7 +8,7 @@ class UnitsController < ApplicationController
         @unit = Unit.new(unit_params)
         if @unit.save 
             flash[:notice] = "Your new unit has been successfully added!"
-            redirect_to unit_path(@unit)
+            redirect_to root_path
         else 
             render 'new'
         end
@@ -20,7 +20,7 @@ class UnitsController < ApplicationController
 
     private 
         def unit_params
-            params.require(:unit).permit(:location, :size, :price)
+            params.require(:unit).permit(:name, :size, :price)
         end
 
 end
